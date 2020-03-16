@@ -17,21 +17,23 @@ import simpleguitk
 import random
 
 # variables globales
-secret_words = ['apple', 'balloon', 'cutlery', 'driver', 'elephant'
-                , 'filter', 'gasoline', 'hammock', 'internet'
-                , 'jasmine', 'knife', 'listing', 'machine'
-                , 'nimble', 'ostrich', 'penguin', 'qualify'
-                , 'river', 'sandwich', 'travel', 'unicorn'
-                , 'violet', 'walrus', 'xylophone', 'yellow'
-                , 'zebra']
+secret_words = ['conocimiento', 'social', 'internacional', 'patentes', 'estrategia'
+                , 'registro', 'indeterminado', 'patentes', 'politica'
+                , 'publico', 'economica', 'reivindicaciones', 'descriptiva']
 
-questions = ['A', 'B', 'C', 'D', 'E'
-                , 'F', 'G', 'H', 'I'
-                , 'J', 'K', 'L', 'M'
-                , 'N', 'O', 'P', 'Q'
-                , 'R', 'S', 'T', 'U'
-                , 'V', 'W', 'X', 'Y'
-                , 'Z']
+questions = ['Que surge como la nueva divisa del poder en términos de una cultura empresarial que trabaja por la propiedad INTELECTUAL', 
+             'Para que la propiedad intelectual siga cumpliendo una función ______ efi ciente, es necesario tener claro que el sistema está \nsoportado sobre principios que equilibran el interés particular del creador frente a los intereses SOCIALES', 
+             'Los derechos exclusivos de la propiedad intelectual tienen un gran valor en el contexto de la competencia __________', 
+             'En el año 2000 se da un hito histórico sobre la propiedad intelectual. Se conoce como el Tratado sobre el Derecho de ________ (PLT)', 
+             'La ________ de protección de la propiedad intelectual es el conjunto de principios y políticas que implementa una organización para \napropiarse de los beneficios económicos derivados de sus esfuerzos de investigación y desarrollo', 
+             'Los derechos de una patente de invención difiere de los derechos de un modelo de utilidad en cuanto a la duración y en la forma de \nprotección. el primero tiene una forma de protección de patente. Cual corresponde al segundo?', 
+             'Los derechos de secretos industriales tienen una forma de protección: contrato de confidencialidad y una duración de plazo _________', 
+             'La consideración de que los descubrimientos no son patentables, pues no constituyen una invención, es un fundamento esencial del sistema \nde __________', 
+             'La titularidad de la propiedad intelectual debe definirse en una _______ en la que se establezca a quién pertenecerán los resultados de \ninvestigaciones financiadas por una empresa', 
+             'Frecuentemente las patentes caen al dominio _______ al poco tiempo de haber sido concedidas por factores como ausencia de solicitudes \nnacionales, falta de explotación y omisión del pago de los derechos anuales', 
+             'Según McDonough (1993), el propósito final del sistema de patentes es de naturaleza ____________. El sistema motiva a individuos y \norganizaciones a inventar, ante incentivos que son comercialmente atractivos', 
+             'Las partes de la patente son: la información, un resumen, la memoria descriptiva, las figuras ilustrativas y las ____________', 
+             'Las partes de la patente son: la información, un resumen, la memoria __________, las figuras ilustrativas y las reivindicaciones']
 
 dictionary = dict(zip(secret_words, questions))
 
@@ -95,7 +97,7 @@ def init():
     
     # set de la palabra aleatoria 
     global the_guess    
-    the_guess = random.randint(0, 25) # NUMERO DE PALABRAS!!!
+    the_guess = random.randint(0, 12) # NUMERO DE PALABRAS!!!
     print_mask()
     
 # función para ayudar a imprimir la líneas _
@@ -218,7 +220,7 @@ def draw(canvas):
     canvas.draw_text("*** Ahorcado-Tecnológico ***", [50,112], 35, "Red")
     canvas.draw_text("Número de errores: " + str(num_misses) + " (6, tú pierdes)", [50,412], 24, "Red")
     canvas.draw_text("Palabra secreta: " + the_mask, [50, 372], 22, "Green")
-    canvas.draw_text("Pregunta-Pista (?): " + que, [50, 520], 18, "Green")
+    canvas.draw_text("Pregunta-Pista (?): " + que, [50, 520], 10, "Green")
     
     # DIBUJO
     
