@@ -19,7 +19,10 @@ import random
 # variables globales
 secret_words = ['conocimiento', 'social', 'internacional', 'patentes', 'estrategia'
                 , 'registro', 'indeterminado', 'patentes', 'politica'
-                , 'publico', 'economica', 'reivindicaciones', 'descriptiva']
+                , 'publico', 'economica', 'reivindicaciones', 'descriptiva'
+                , 'oficina de patentes', 'conocimiento', 'propiedad intelectual', 'derechos de autor'
+                , 'creaciones literarias', 'secreto industrial', 'proteccion de variedades vegetales', 'explotacion comercial'
+                , 'producto', ' caracter confidencial', 'vegetales']
 
 questions = ['Que surge como la nueva divisa del poder en términos de una cultura empresarial que trabaja por la propiedad INTELECTUAL', 
              'Para que la propiedad intelectual siga cumpliendo una función ______ efi ciente, es necesario tener claro que el sistema está \nsoportado sobre principios que equilibran el interés particular del creador frente a los intereses SOCIALES', 
@@ -33,7 +36,18 @@ questions = ['Que surge como la nueva divisa del poder en términos de una cultu
              'Frecuentemente las patentes caen al dominio _______ al poco tiempo de haber sido concedidas por factores como ausencia de solicitudes \nnacionales, falta de explotación y omisión del pago de los derechos anuales', 
              'Según McDonough (1993), el propósito final del sistema de patentes es de naturaleza ____________. El sistema motiva a individuos y \norganizaciones a inventar, ante incentivos que son comercialmente atractivos', 
              'Las partes de la patente son: la información, un resumen, la memoria descriptiva, las figuras ilustrativas y las ____________', 
-             'Las partes de la patente son: la información, un resumen, la memoria __________, las figuras ilustrativas y las reivindicaciones']
+             'Las partes de la patente son: la información, un resumen, la memoria __________, las figuras ilustrativas y las reivindicaciones',
+	     'La propiedad intelectual (PI), se define como el conjunto de conocimientos que han sido descritos o codificados por el personal de una \ninstitución. Este título de propiedad es otorgado por la sociedad a través de: ___________________',
+             'La propiedad intelectual surge como un mecanismo, empleado por el Estado, para promover la generación y difusión del: ____________',
+             'El principio básico de la ___________________ es la concertación de un contrato social, a través del cual el estado concede a los autores \nde obras intelectuales un derecho exclusivo para la explotación temporal de sus obras',
+             'El régimen jurídico de la propiedad intelectual incluye dos grandes ramas: \nA. propiedad industrial \nB.____________________',
+             'los derechos de autor son ampliamente usados para proteger obras relacionadas con: \nA. creaciones artísticas \nB.____________________'',
+             'Dentro de la rama de la propiedad industrial, las figuras más importantes para la protección de resultados de actividades de I+D son: \nA. patentes \nB. derechos de obtentor \nC. ____________________',
+             'La propiedad industrial puede dividirse en tres grandes áreas: \nA. protección otorgada a invenciones con aplicación industrial \nB. signos distintivos relacionados con la identificación y fidelidad del consumidor a un producto o servicio \nC.____________________',
+             'La patente es el derecho que otorga el Estado a un inventor para la _________________ (producción, uso o venta) de su invención de \nmanera exclusiva, durante un tiempo determinado; a cambio de ese monopolio temporal el inventor debe \ndivulgar el contenido técnico de su invención',
+             'Los tipos de patentes existentes son de: \nA. proceso \nB._________',
+             'El secreto industrial se refiere a información que se mantiene bajo el control de la empresa y que se difunde dentro de ella de manera selectiva; \nsin embargo, para que la información pueda ser considerada como secreto industrial ésta debe cumplir con las siguientes características: \nA. debe tener aplicación industrial o comercial \nB. debe ser guardada con ___________________',
+             'Los derechos de obtentor son una forma de protección exclusiva para variedades ___________']
 
 dictionary = dict(zip(secret_words, questions))
 
